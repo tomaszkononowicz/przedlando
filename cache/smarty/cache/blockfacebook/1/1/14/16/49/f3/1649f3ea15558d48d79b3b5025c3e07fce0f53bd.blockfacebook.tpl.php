@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:102739211259f358a721cd67-11870448%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:12186536459f34ecf6bec02-92433207%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,17 +9,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '102739211259f358a721cd67-11870448',
-  'variables' => 
-  array (
-    'facebookurl' => 0,
-  ),
-  'has_nocache_code' => false,
+  'nocache_hash' => '12186536459f34ecf6bec02-92433207',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f358a7225cd1_42265599',
+  'unifunc' => 'content_59f3605e8bac77_74462816',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f358a7225cd1_42265599')) {function content_59f358a7225cd1_42265599($_smarty_tpl) {?><div id="fb-root"></div>
+<?php if ($_valid && !is_callable('content_59f3605e8bac77_74462816')) {function content_59f3605e8bac77_74462816($_smarty_tpl) {?><div id="fb-root"></div>
 <div id="facebook_block" class="col-xs-4">
 	<h4 >Śledź nas na Facebooku</h4>
 	<div class="facebook-fanbox">

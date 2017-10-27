@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 18:00:00
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:19:06
          compiled from "/var/www/html/themes/default-bootstrap/order-return.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:143517716859f358001e0226-42029799%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:45481714159f34e6a640820-41828701%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '143517716859f358001e0226-42029799',
+  'nocache_hash' => '45481714159f34e6a640820-41828701',
   'function' => 
   array (
   ),
@@ -40,9 +40,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f35800276f87_74823676',
+  'unifunc' => 'content_59f34e6a914f29_25520074',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f35800276f87_74823676')) {function content_59f35800276f87_74823676($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/var/www/html/tools/smarty/plugins/function.counter.php';
+<?php if ($_valid && !is_callable('content_59f34e6a914f29_25520074')) {function content_59f34e6a914f29_25520074($_smarty_tpl) {?><?php if (!is_callable('smarty_function_counter')) include '/var/www/html/tools/smarty/plugins/function.counter.php';
 ?>
 <?php echo $_smarty_tpl->getSubTemplate ("./errors.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
@@ -182,13 +182,13 @@ $_smarty_tpl->tpl_vars['data']->_loop = true;
 </li>
 			<li><?php echo smartyTranslate(array('s'=>'Please print out the'),$_smarty_tpl);?>
  <a href="<?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['orderRet']->value->id);?>
-<?php $_tmp68=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('pdf-order-return',true,null,"id_order_return=".$_tmp68), ENT_QUOTES, 'UTF-8', true);?>
+<?php $_tmp67=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('pdf-order-return',true,null,"id_order_return=".$_tmp67), ENT_QUOTES, 'UTF-8', true);?>
 "><?php echo smartyTranslate(array('s'=>'PDF return slip'),$_smarty_tpl);?>
 </a> <?php echo smartyTranslate(array('s'=>'and include it with your package.'),$_smarty_tpl);?>
 </li>
 			<li><?php echo smartyTranslate(array('s'=>'Please see the PDF return slip'),$_smarty_tpl);?>
  (<a href="<?php ob_start();?><?php echo intval($_smarty_tpl->tpl_vars['orderRet']->value->id);?>
-<?php $_tmp69=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('pdf-order-return',true,null,"id_order_return=".$_tmp69), ENT_QUOTES, 'UTF-8', true);?>
+<?php $_tmp68=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('pdf-order-return',true,null,"id_order_return=".$_tmp68), ENT_QUOTES, 'UTF-8', true);?>
 "><?php echo smartyTranslate(array('s'=>'for the correct address.'),$_smarty_tpl);?>
 </a>)</li>
 		</ul>

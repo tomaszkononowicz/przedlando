@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:59:56
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:18:59
          compiled from "/var/www/html/themes/default-bootstrap/order-confirmation.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:111328406359f357fcdb37a9-96854731%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:70006225359f34e636d4f81-62509529%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '111328406359f357fcdb37a9-96854731',
+  'nocache_hash' => '70006225359f34e636d4f81-62509529',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f357fcdd3831_76491094',
+  'unifunc' => 'content_59f34e636f6d01_84870905',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f357fcdd3831_76491094')) {function content_59f357fcdd3831_76491094($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f34e636f6d01_84870905')) {function content_59f34e636f6d01_84870905($_smarty_tpl) {?>
 
 <?php $_smarty_tpl->_capture_stack[0][] = array('path', null, null); ob_start(); ?><?php echo smartyTranslate(array('s'=>'Order confirmation'),$_smarty_tpl);?>
 <?php list($_capture_buffer, $_capture_assign, $_capture_append) = array_pop($_smarty_tpl->_capture_stack[0]);
@@ -60,8 +60,8 @@ if (!empty($_capture_buffer)) {
 </p>
     <p class="cart_navigation exclusive">
 	<a class="button-exclusive btn btn-default" href="<?php ob_start();?><?php echo urlencode($_smarty_tpl->tpl_vars['reference_order']->value);?>
-<?php $_tmp28=ob_get_clean();?><?php ob_start();?><?php echo urlencode($_smarty_tpl->tpl_vars['email']->value);?>
-<?php $_tmp29=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('guest-tracking',true,null,"id_order=".$_tmp28."&email=".$_tmp29), ENT_QUOTES, 'UTF-8', true);?>
+<?php $_tmp25=ob_get_clean();?><?php ob_start();?><?php echo urlencode($_smarty_tpl->tpl_vars['email']->value);?>
+<?php $_tmp26=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('guest-tracking',true,null,"id_order=".$_tmp25."&email=".$_tmp26), ENT_QUOTES, 'UTF-8', true);?>
 " title="<?php echo smartyTranslate(array('s'=>'Follow my order'),$_smarty_tpl);?>
 "><i class="icon-chevron-left"></i><?php echo smartyTranslate(array('s'=>'Follow my order'),$_smarty_tpl);?>
 </a>

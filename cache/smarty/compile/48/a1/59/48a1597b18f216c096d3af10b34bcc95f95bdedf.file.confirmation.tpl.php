@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:59:58
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:19:00
          compiled from "/var/www/html/themes/default-bootstrap/modules/cashondelivery/views/templates/hook/confirmation.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:70331621559f357fe85ca26-55725836%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:183187284359f34e64931835-39930723%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '70331621559f357fe85ca26-55725836',
+  'nocache_hash' => '183187284359f34e64931835-39930723',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f357fe86a0e9_10658566',
+  'unifunc' => 'content_59f34e6493f903_70660471',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f357fe86a0e9_10658566')) {function content_59f357fe86a0e9_10658566($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f34e6493f903_70660471')) {function content_59f34e6493f903_70660471($_smarty_tpl) {?>
 <div class="box">
     <p><?php echo smartyTranslate(array('s'=>'Your order on','mod'=>'cashondelivery'),$_smarty_tpl);?>
  <span class="bold"><?php echo $_smarty_tpl->tpl_vars['shop_name']->value;?>

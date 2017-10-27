@@ -1,11 +1,11 @@
-<?php /*%%SmartyHeaderCode:209907177759f358aaa35836-88504028%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13625086859f3612d9bdba0-06938903%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '1b1c215ce32173764aa2a2d1f148af37261154be' => 
     array (
       0 => '/var/www/html/themes/default-bootstrap/modules/blockcategories/blockcategories.tpl',
-      1 => 1508491951,
+      1 => 1509121949,
       2 => 'file',
     ),
     '5c53737510b61f5e57aa4fb383106c38f28d329a' => 
@@ -15,20 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '209907177759f358aaa35836-88504028',
-  'variables' => 
-  array (
-    'blockCategTree' => 0,
-    'currentCategory' => 0,
-    'isDhtml' => 0,
-    'child' => 0,
-  ),
-  'has_nocache_code' => false,
+  'nocache_hash' => '13625086859f3612d9bdba0-06938903',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f358aaa54d77_99000552',
+  'unifunc' => 'content_59f36be9b214a9_40688656',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f358aaa54d77_99000552')) {function content_59f358aaa54d77_99000552($_smarty_tpl) {?><!-- Block categories module -->
+<?php if ($_valid && !is_callable('content_59f36be9b214a9_40688656')) {function content_59f36be9b214a9_40688656($_smarty_tpl) {?><!-- Block categories module -->
 <div id="categories_block_left" class="block">
 	<h2 class="title_block">
 					Women

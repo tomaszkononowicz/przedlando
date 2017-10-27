@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:59:55
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:18:57
          compiled from "/var/www/html/admin/themes/default/template/helpers/shops_list/list.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:53379727259f357fbd93bb6-01366670%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:165508425059f34e61d02307-28658289%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '53379727259f357fbd93bb6-01366670',
+  'nocache_hash' => '165508425059f34e61d02307-28658289',
   'function' => 
   array (
   ),
@@ -32,9 +32,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f357fbddd4b4_28930358',
+  'unifunc' => 'content_59f34e61d6adc0_90407260',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f357fbddd4b4_28930358')) {function content_59f357fbddd4b4_28930358($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f34e61d6adc0_90407260')) {function content_59f34e61d6adc0_90407260($_smarty_tpl) {?>
 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_smarty_tpl->tpl_vars['current_shop_name']->value;?>
  <i class="icon-caret-down"></i></a><ul class="dropdown-menu"><li<?php if (!isset($_smarty_tpl->tpl_vars['current_shop_value']->value)||$_smarty_tpl->tpl_vars['current_shop_value']->value=='') {?> class="active"<?php }?>><a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['url']->value, ENT_QUOTES, 'UTF-8', true);?>
 "><?php echo smartyTranslate(array('s'=>'All shops'),$_smarty_tpl);?>

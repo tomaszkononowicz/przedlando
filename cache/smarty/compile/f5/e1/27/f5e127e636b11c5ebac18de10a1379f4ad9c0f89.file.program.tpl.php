@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:59:58
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:19:00
          compiled from "/var/www/html/themes/default-bootstrap/modules/referralprogram/views/templates/front/program.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:107879209359f357fe946b81-96047904%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:100276547159f34e64298350-27487268%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '107879209359f357fe946b81-96047904',
+  'nocache_hash' => '100276547159f34e64298350-27487268',
   'function' => 
   array (
   ),
@@ -44,9 +44,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f357fea6ec86_25876108',
+  'unifunc' => 'content_59f34e643ba1c6_00064867',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f357fea6ec86_25876108')) {function content_59f357fea6ec86_25876108($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f34e643ba1c6_00064867')) {function content_59f34e643ba1c6_00064867($_smarty_tpl) {?>
 <?php $_smarty_tpl->_capture_stack[0][] = array('path', null, null); ob_start(); ?><a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getPageLink('my-account',true), ENT_QUOTES, 'UTF-8', true);?>
 " title="<?php echo smartyTranslate(array('s'=>'Manage my account','mod'=>'referralprogram'),$_smarty_tpl);?>
 " rel="nofollow"><?php echo smartyTranslate(array('s'=>'My account','mod'=>'referralprogram'),$_smarty_tpl);?>
@@ -223,7 +223,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['friends']['last']       = ($
 
 					<?php $_smarty_tpl->tpl_vars["file"] = new Smarty_variable(((string)$_smarty_tpl->tpl_vars['lang_iso']->value)."/referralprogram-invitation.html", null, 0);?>
 					<a href="<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['file']->value;?>
-<?php $_tmp45=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getModuleLink('referralprogram','email',array('height'=>'500','width'=>'600','mail'=>$_tmp45),true), ENT_QUOTES, 'UTF-8', true);?>
+<?php $_tmp37=ob_get_clean();?><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['link']->value->getModuleLink('referralprogram','email',array('height'=>'500','width'=>'600','mail'=>$_tmp37),true), ENT_QUOTES, 'UTF-8', true);?>
 " class="thickbox" title="<?php echo smartyTranslate(array('s'=>'Invitation e-mail','mod'=>'referralprogram'),$_smarty_tpl);?>
 " rel="nofollow"><?php echo smartyTranslate(array('s'=>'the default e-mail','mod'=>'referralprogram'),$_smarty_tpl);?>
 </a> <?php echo smartyTranslate(array('s'=>'that will be sent to your friend(s).','mod'=>'referralprogram'),$_smarty_tpl);?>

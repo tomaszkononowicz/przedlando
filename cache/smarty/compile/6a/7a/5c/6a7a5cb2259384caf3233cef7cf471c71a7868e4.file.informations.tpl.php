@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:59:59
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:19:03
          compiled from "/var/www/html/admin/themes/default/template/controllers/products/informations.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:116494005059f357ff7ea519-57219679%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:86468557459f34e674a5649-77745563%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '116494005059f357ff7ea519-57219679',
+  'nocache_hash' => '86468557459f34e674a5649-77745563',
   'function' => 
   array (
   ),
@@ -44,9 +44,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f357ff926d11_34208853',
+  'unifunc' => 'content_59f34e67af0184_07394038',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f357ff926d11_34208853')) {function content_59f357ff926d11_34208853($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f34e67af0184_07394038')) {function content_59f34e67af0184_07394038($_smarty_tpl) {?>
 <?php if ($_smarty_tpl->tpl_vars['check_product_association_ajax']->value) {?>
 	<?php $_smarty_tpl->tpl_vars['class_input_ajax'] = new Smarty_variable('check_product_name ', null, 0);?>
 <?php } else { ?>
@@ -191,7 +191,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</span>
 		</label>
 		<div class="col-lg-5">
-			<?php ob_start();?><?php if (!$_smarty_tpl->tpl_vars['product']->value->id||Configuration::get('PS_FORCE_FRIENDLY_PRODUCT')) {?><?php echo "copy2friendlyUrl";?><?php }?><?php $_tmp22=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ("controllers/products/input_text_lang.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('languages'=>$_smarty_tpl->tpl_vars['languages']->value,'input_class'=>((string)$_smarty_tpl->tpl_vars['class_input_ajax']->value).$_tmp22." updateCurrentText",'input_value'=>$_smarty_tpl->tpl_vars['product']->value->name,'input_name'=>"name",'required'=>true), 0);?>
+			<?php ob_start();?><?php if (!$_smarty_tpl->tpl_vars['product']->value->id||Configuration::get('PS_FORCE_FRIENDLY_PRODUCT')) {?><?php echo "copy2friendlyUrl";?><?php }?><?php $_tmp17=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ("controllers/products/input_text_lang.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('languages'=>$_smarty_tpl->tpl_vars['languages']->value,'input_class'=>((string)$_smarty_tpl->tpl_vars['class_input_ajax']->value).$_tmp17." updateCurrentText",'input_value'=>$_smarty_tpl->tpl_vars['product']->value->name,'input_name'=>"name",'required'=>true), 0);?>
 
 		</div>
 	</div>

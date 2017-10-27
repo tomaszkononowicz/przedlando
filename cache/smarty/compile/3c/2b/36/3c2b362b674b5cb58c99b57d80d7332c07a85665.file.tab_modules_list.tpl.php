@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:59:58
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:18:59
          compiled from "/var/www/html/admin/themes/default/template/controllers/modules/tab_modules_list.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:142227213759f357feae4097-97128493%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:51668384359f34e63e75168-23179725%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '142227213759f357feae4097-97128493',
+  'nocache_hash' => '51668384359f34e63e75168-23179725',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f357feb0e916_63597587',
+  'unifunc' => 'content_59f34e63e9feb2_70405260',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f357feb0e916_63597587')) {function content_59f357feb0e916_63597587($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/var/www/html/tools/smarty/plugins/function.cycle.php';
+<?php if ($_valid && !is_callable('content_59f34e63e9feb2_70405260')) {function content_59f34e63e9feb2_70405260($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/var/www/html/tools/smarty/plugins/function.cycle.php';
 ?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['tab_modules_list']->value)&&!empty($_smarty_tpl->tpl_vars['tab_modules_list']->value)) {?>
@@ -61,7 +61,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['module']->key => $_smarty_tpl->tpl_va
 $_smarty_tpl->tpl_vars['module']->_loop = true;
 ?>
 					<?php ob_start();?><?php echo smarty_function_cycle(array('values'=>",rowalt"),$_smarty_tpl);?>
-<?php $_tmp16=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ('controllers/modules/tab_module_line.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('class_row'=>$_tmp16), 0);?>
+<?php $_tmp5=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ('controllers/modules/tab_module_line.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('class_row'=>$_tmp5), 0);?>
 
 				<?php } ?>
 			</table>
@@ -76,7 +76,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['module']->key => $_smarty_tpl->tpl_va
 $_smarty_tpl->tpl_vars['module']->_loop = true;
 ?>
 					<?php ob_start();?><?php echo smarty_function_cycle(array('values'=>",rowalt"),$_smarty_tpl);?>
-<?php $_tmp17=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ('controllers/modules/tab_module_line.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('class_row'=>$_tmp17), 0);?>
+<?php $_tmp6=ob_get_clean();?><?php echo $_smarty_tpl->getSubTemplate ('controllers/modules/tab_module_line.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('class_row'=>$_tmp6), 0);?>
 
 				<?php } ?>
 			</table>

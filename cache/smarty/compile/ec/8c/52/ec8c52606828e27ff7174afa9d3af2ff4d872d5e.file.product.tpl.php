@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:59:59
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:19:00
          compiled from "/var/www/html/themes/default-bootstrap/modules/loyalty/views/templates/hook/product.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:107652808159f357ffb70065-69444577%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:149350337059f34e64d6e575-44504743%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '107652808159f357ffb70065-69444577',
+  'nocache_hash' => '149350337059f34e64d6e575-44504743',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f357ffbaa896_57129515',
+  'unifunc' => 'content_59f34e64da8025_73188085',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f357ffbaa896_57129515')) {function content_59f357ffbaa896_57129515($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f34e64da8025_73188085')) {function content_59f34e64da8025_73188085($_smarty_tpl) {?>
 <p id="loyalty" class="align_justify">
 	<?php if ($_smarty_tpl->tpl_vars['points']->value) {?>
 		<?php echo smartyTranslate(array('s'=>'By buying this product you can collect up to','mod'=>'loyalty'),$_smarty_tpl);?>

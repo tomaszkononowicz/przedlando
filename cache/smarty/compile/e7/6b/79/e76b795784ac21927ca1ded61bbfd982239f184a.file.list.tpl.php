@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:59:58
+<?php /* Smarty version Smarty-3.1.19, created on 2017-10-27 17:19:00
          compiled from "/var/www/html/admin/themes/default/template/controllers/modules/list.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:129299507859f357fe922884-33061117%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:24239278559f34e640668b8-80027434%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '129299507859f357fe922884-33061117',
+  'nocache_hash' => '24239278559f34e640668b8-80027434',
   'function' => 
   array (
   ),
@@ -27,9 +27,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f357fea43140_85833550',
+  'unifunc' => 'content_59f34e64197b70_91967427',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f357fea43140_85833550')) {function content_59f357fea43140_85833550($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/var/www/html/tools/smarty/plugins/modifier.replace.php';
+<?php if ($_valid && !is_callable('content_59f34e64197b70_91967427')) {function content_59f34e64197b70_91967427($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_replace')) include '/var/www/html/tools/smarty/plugins/modifier.replace.php';
 ?>
 
 <table id="module-list" class="table">
@@ -56,7 +56,7 @@ if (!empty($_capture_buffer)) {
 } else $_smarty_tpl->capture_error();?>
 				<tr>
 					<td class="<?php ob_start();?><?php echo Smarty::$_smarty_vars['capture']['moduleStatutClass'];?>
-<?php $_tmp15=ob_get_clean();?><?php echo $_tmp15;?>
+<?php $_tmp8=ob_get_clean();?><?php echo $_tmp8;?>
  text-center" style="width: 1%;">
 						<?php if ((isset($_smarty_tpl->tpl_vars['module']->value->id)&&$_smarty_tpl->tpl_vars['module']->value->id>0)||!isset($_smarty_tpl->tpl_vars['module']->value->type)||$_smarty_tpl->tpl_vars['module']->value->type!='addonsMustHave') {?>
 						<input type="checkbox" name="modules" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['module']->value->name, ENT_QUOTES, 'UTF-8', true);?>
