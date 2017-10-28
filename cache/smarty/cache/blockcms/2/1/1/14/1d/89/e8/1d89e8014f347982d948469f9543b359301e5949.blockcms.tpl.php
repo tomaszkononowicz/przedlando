@@ -11,56 +11,36 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '205209551659f34ecfbe7520-70124963',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f3605eb3c396_88818669',
+  'unifunc' => 'content_59f4bce5ab5261_86150135',
   'has_nocache_code' => true,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f3605eb3c396_88818669')) {function content_59f3605eb3c396_88818669($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f4bce5ab5261_86150135')) {function content_59f4bce5ab5261_86150135($_smarty_tpl) {?>
 	<!-- Block CMS module footer -->
 	<section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
 		<h4>Informacja</h4>
 		<ul class="toggle-footer">
-							<li class="item">
-					<a href="http://localhost:8080/promocje" title="Promocje">
-						Promocje
-					</a>
-				</li>
-									<li class="item">
-				<a href="http://localhost:8080/nowe-produkty" title="Nowe produkty">
-					Nowe produkty
-				</a>
-			</li>
-										<li class="item">
-					<a href="http://localhost:8080/najczesciej-kupowane" title="Najczęściej kupowane">
-						Najczęściej kupowane
-					</a>
-				</li>
-										<li class="item">
-					<a href="http://localhost:8080/sklepy" title="Nasze sklepy">
-						Nasze sklepy
-					</a>
-				</li>
-									<li class="item">
+																		<li class="item">
 				<a href="http://localhost:8080/kontakt" title="Kontakt z nami">
 					Kontakt z nami
 				</a>
 			</li>
 															<li class="item">
-						<a href="http://localhost:8080/content/3-terms-and-conditions-of-use" title="Terms and conditions of use">
-							Terms and conditions of use
+						<a href="http://localhost:8080/content/2-legal-notice" title="Regulamin">
+							Regulamin
 						</a>
 					</li>
 																<li class="item">
-						<a href="http://localhost:8080/content/4-about-us" title="About us">
-							About us
+						<a href="http://localhost:8080/content/3-terms-and-conditions-of-use" title="Polityka prywatności">
+							Polityka prywatności
 						</a>
 					</li>
-													<li>
-				<a href="http://localhost:8080/mapa-strony" title="Mapa strony">
-					Mapa strony
-				</a>
-			</li>
-					</ul>
+																<li class="item">
+						<a href="http://localhost:8080/content/4-about-us" title="O nas">
+							O nas
+						</a>
+					</li>
+												</ul>
 		
 	</section>
 		<section class="bottom-footer col-xs-12">

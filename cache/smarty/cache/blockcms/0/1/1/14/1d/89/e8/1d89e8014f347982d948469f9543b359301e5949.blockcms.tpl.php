@@ -11,11 +11,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '205209551659f34ecfbe7520-70124963',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f3612da09aa2_50427362',
+  'unifunc' => 'content_59f4b6a4df2761_21525020',
   'has_nocache_code' => true,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f3612da09aa2_50427362')) {function content_59f3612da09aa2_50427362($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f4b6a4df2761_21525020')) {function content_59f4b6a4df2761_21525020($_smarty_tpl) {?>
 	<!-- Block CMS module -->
 			<section id="informations_block_left_1" class="block informations_block_left">
 			<p class="title_block">
@@ -35,13 +35,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								</a>
 							</li>
 																								<li>
-								<a href="http://localhost:8080/content/3-terms-and-conditions-of-use" title="Terms and conditions of use">
-									Terms and conditions of use
+								<a href="http://localhost:8080/content/3-terms-and-conditions-of-use" title="Polityka prywatności">
+									Polityka prywatności
 								</a>
 							</li>
 																								<li>
-								<a href="http://localhost:8080/content/4-about-us" title="About us">
-									About us
+								<a href="http://localhost:8080/content/4-about-us" title="O nas">
+									O nas
 								</a>
 							</li>
 																								<li>

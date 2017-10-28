@@ -11,27 +11,26 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '15765525459f34ecfcbee75-34292692',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f3605eb6db00_95180488',
+  'unifunc' => 'content_59f4bd5e90de52_20305192',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f3605eb6db00_95180488')) {function content_59f3605eb6db00_95180488($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59f4bd5e90de52_20305192')) {function content_59f4bd5e90de52_20305192($_smarty_tpl) {?>
 <!-- MODULE Block contact infos -->
 <section id="block_contact_infos" class="footer-block col-xs-12 col-sm-4">
 	<div>
         <h4>Informacja o sklepie</h4>
         <ul class="toggle-footer">
                         	<li>
-            		<i class="icon-map-marker"></i>My Company, 42 Puffin street
-12345 Puffinville
-France            	</li>
+            		<i class="icon-map-marker"></i>Przedlando, al. Grunwaldzka 127
+80-244 Gdańsk            	</li>
                                     	<li>
             		<i class="icon-phone"></i>Skontaktuj się z nami: 
-            		<span>0123-456-789</span>
+            		<span>123-456-789</span>
             	</li>
                                     	<li>
             		<i class="icon-envelope-alt"></i>E-mail: 
-            		<span><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%61%6c%65%73@%79%6f%75%72%63%6f%6d%70%61%6e%79.%63%6f%6d" >&#x73;&#x61;&#x6c;&#x65;&#x73;&#x40;&#x79;&#x6f;&#x75;&#x72;&#x63;&#x6f;&#x6d;&#x70;&#x61;&#x6e;&#x79;&#x2e;&#x63;&#x6f;&#x6d;</a></span>
+            		<span><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%6b%6f%6e%74%61%6b%74@%70%72%7a%65%64%6c%61%6e%64%6f.%70%6c" >&#x6b;&#x6f;&#x6e;&#x74;&#x61;&#x6b;&#x74;&#x40;&#x70;&#x72;&#x7a;&#x65;&#x64;&#x6c;&#x61;&#x6e;&#x64;&#x6f;&#x2e;&#x70;&#x6c;</a></span>
             	</li>
                     </ul>
     </div>
