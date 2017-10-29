@@ -6349,6 +6349,7 @@ table.table_block td {
     transform: rotate(135deg); }
 
 .sale-label {
+	display: none;
   font: 700 14px/12px Arial, Helvetica, sans-serif;
   color: #fff;
   background: #f13340;
@@ -6357,7 +6358,6 @@ table.table_block td {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
   width: 130px;
   text-align: center;
-  display: block;
   position: absolute;
   right: -33px;
   top: 16px;
