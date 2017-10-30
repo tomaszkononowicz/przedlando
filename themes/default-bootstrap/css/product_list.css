@@ -110,11 +110,19 @@ ul.product_list .comments_note {
     overflow: hidden;
     font-style: italic; }
 ul.product_list .functional-buttons div a, ul.product_list .functional-buttons div label {
+  font: 700 17px/21px Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: #777676;
-  cursor: pointer; }
+  color: white;
+  cursor: pointer; 
+  background: none;
+  border-color: #327082;
+  background-color: #327082; 
+  padding: 10px 36px;
+}
   ul.product_list .functional-buttons div a:hover, ul.product_list .functional-buttons div label:hover {
-    color: #000; }
+  border-color: #333333;
+  background-color: #333333; }
+}
 ul.product_list .functional-buttons div.wishlist {
   border-right: 1px solid #d6d4d4; }
   ul.product_list .functional-buttons div.wishlist a:before {
@@ -215,14 +223,14 @@ ul.product_list.grid > li {
       ul.product_list.grid > li .product-container .button-container .lnk_view {
         margin: 0 6px 10px 6px; }
     ul.product_list.grid > li .product-container .functional-buttons {
-      background: url(../img/functional-bt-shadow.png) repeat-x;
-      padding: 11px 0 5px; }
+      /*background: url(../img/functional-bt-shadow.png) repeat-x;*/
+      /*padding: 11px 0 5px;*/ }
       @media (min-width: 1200px) {
         ul.product_list.grid > li .product-container .functional-buttons {
           display: none; } }
       ul.product_list.grid > li .product-container .functional-buttons div {
-        width: 50%;
-        float: left;
+        /*width: 50%;
+        float: left;*/
         padding: 3px 0 4px 0; }
   @media (min-width: 1200px) {
     ul.product_list.grid > li.hovered .product-container {

@@ -48,7 +48,7 @@ class BlockViewed extends Module
 
 	public function install()
 	{
-		return (parent::install() && $this->registerHook('header') && $this->registerHook('leftColumn') && Configuration::updateValue('PRODUCTS_VIEWED_NBR', 2));
+		return (parent::install() && $this->registerHook('header') && $this->registerHook('displayBeforeFooter') && $this->registerHook('leftColumn') && Configuration::updateValue('PRODUCTS_VIEWED_NBR', 2));
 
 	}
 
@@ -139,6 +139,11 @@ class BlockViewed extends Module
 	}
 
 	public function hookLeftColumn($params)
+	{
+		return $this->hookRightColumn($params);
+	}
+
+	public function hookDisplayBeforeFooter($params)
 	{
 		return $this->hookRightColumn($params);
 	}

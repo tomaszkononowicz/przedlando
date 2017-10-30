@@ -115,9 +115,9 @@
 			</div>
 			<div class="columns-container">
 				<div id="columns" class="container">
-					{if $page_name !='index' && $page_name !='pagenotfound'}
+					{*{if $page_name !='index' && $page_name !='pagenotfound'}
 						{include file="$tpl_dir./breadcrumb.tpl"}
-					{/if}
+					{/if}*}
 					<div id="slider_row" class="row">
 						{capture name='displayTopColumn'}{hook h='displayTopColumn'}{/capture}
 						{if $smarty.capture.displayTopColumn}
