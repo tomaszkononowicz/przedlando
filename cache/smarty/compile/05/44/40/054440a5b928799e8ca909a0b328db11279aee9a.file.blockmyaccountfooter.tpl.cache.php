@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-30 16:52:08
+<?php /* Smarty version Smarty-3.1.19, created on 2017-11-01 17:26:44
          compiled from "/var/www/html/themes/default-bootstrap/modules/blockmyaccountfooter/blockmyaccountfooter.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:150194327359f6f52f87dfa4-57879949%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '054440a5b928799e8ca909a0b328db11279aee9a' => 
     array (
       0 => '/var/www/html/themes/default-bootstrap/modules/blockmyaccountfooter/blockmyaccountfooter.tpl',
-      1 => 1509378629,
+      1 => 1509553509,
       2 => 'file',
     ),
   ),
