@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-10-30 16:11:00
+<?php /* Smarty version Smarty-3.1.19, created on 2017-11-02 18:17:14
          compiled from "/var/www/html/themes/default-bootstrap/products-comparison.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:187801007959f74104717148-54594411%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '48d28422047318e2f0c93564ca08bf6e7ac620ed' => 
     array (
       0 => '/var/www/html/themes/default-bootstrap/products-comparison.tpl',
-      1 => 1509370941,
+      1 => 1509640380,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_59f7410481b1e8_45672962',
   'variables' => 
   array (
     'hasProduct' => 0,
@@ -43,8 +45,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'base_dir' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f7410481b1e8_45672962',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_59f7410481b1e8_45672962')) {function content_59f7410481b1e8_45672962($_smarty_tpl) {?><?php if (!is_callable('smarty_function_math')) include '/var/www/html/tools/smarty/plugins/function.math.php';
 if (!is_callable('smarty_function_cycle')) include '/var/www/html/tools/smarty/plugins/function.cycle.php';
@@ -135,7 +135,7 @@ $_smarty_tpl->tpl_vars['product']->_loop = true;
 
 								<?php if (isset($_smarty_tpl->tpl_vars['product']->value->specificPrice)&&$_smarty_tpl->tpl_vars['product']->value->specificPrice) {?>
 									<?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['product']->value->specificPrice['reduction_type']=='percentage';?>
-<?php $_tmp7=ob_get_clean();?><?php if ($_tmp7) {?>
+<?php $_tmp1=ob_get_clean();?><?php if ($_tmp1) {?>
 										<span class="old-price product-price">
 											<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['displayWtPrice'][0][0]->displayWtPrice(array('p'=>($_smarty_tpl->tpl_vars['product']->value->getPrice(true,null,6,null,false,false))),$_smarty_tpl);?>
 
