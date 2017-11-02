@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-11-02 18:17:14
+<?php /* Smarty version Smarty-3.1.19, created on 2017-11-02 18:36:35
          compiled from "/var/www/html/themes/default-bootstrap/products-comparison.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:187801007959f74104717148-54594411%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '48d28422047318e2f0c93564ca08bf6e7ac620ed' => 
     array (
       0 => '/var/www/html/themes/default-bootstrap/products-comparison.tpl',
-      1 => 1509640380,
+      1 => 1509643938,
       2 => 'file',
     ),
   ),

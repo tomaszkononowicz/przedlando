@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-11-02 17:33:47
+<?php /* Smarty version Smarty-3.1.19, created on 2017-11-02 19:36:56
          compiled from "/var/www/html/themes/default-bootstrap/global.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:163625487459f9f5d45b1340-34749939%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:134603211559fb65c8d6d249-99059292%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bede96cd3f6388f91fcd0a703f8b6413261222a8' => 
     array (
       0 => '/var/www/html/themes/default-bootstrap/global.tpl',
-      1 => 1509640380,
+      1 => 1509643938,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '163625487459f9f5d45b1340-34749939',
+  'nocache_hash' => '134603211559fb65c8d6d249-99059292',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f9f5d45de393_77561368',
   'variables' => 
   array (
     'mobile_device' => 0,
@@ -37,8 +35,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'quick_view' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_59fb65c8d9a5b8_67989920',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f9f5d45de393_77561368')) {function content_59f9f5d45de393_77561368($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59fb65c8d9a5b8_67989920')) {function content_59fb65c8d9a5b8_67989920($_smarty_tpl) {?>
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('isMobile'=>$_smarty_tpl->tpl_vars['mobile_device']->value),$_smarty_tpl);?>
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('baseDir'=>$_smarty_tpl->tpl_vars['content_dir']->value),$_smarty_tpl);?>
 <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['addJsDef'][0][0]->addJsDef(array('baseUri'=>$_smarty_tpl->tpl_vars['base_uri']->value),$_smarty_tpl);?>

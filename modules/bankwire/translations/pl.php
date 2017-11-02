@@ -53,7 +53,7 @@ $_MODULE['<{bankwire}prestashop>payment_return_ca7e41a658753c87973936d7ce2429a8'
 $_MODULE['<{bankwire}prestashop>payment_return_66fcf4c223bbf4c7c886d4784e1f62e4'] = 'obsługą klienta';
 $_MODULE['<{bankwire}prestashop>payment_return_d15feee53d81ea16269e54d4784fa123'] = 'Zauważyliśmy problem z Twoim zamówieniem. Jeżeli uważasz, że nastąpił jakiś błąd, proszę skontaktuj się z naszą';
 $_MODULE['<{bankwire}prestashop>payment_5e1695822fc5af98f6b749ea3cbc9b4c'] = 'Zapłać przelewem';
-$_MODULE['<{bankwire}prestashop>payment_4e1fb9f4b46556d64db55d50629ee301'] = '(czas przetwarzania zamówienia będzie dłuższy)';
+$_MODULE['<{bankwire}prestashop>payment_4e1fb9f4b46556d64db55d50629ee301'] = ' ';
 $_MODULE['<{bankwire}prestashop>payment_return_decce112a9e64363c997b04aa71b7cb8'] = 'obsługą klienta';
 
 

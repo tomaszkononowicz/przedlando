@@ -1,22 +1,20 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-11-02 17:34:57
+<?php /* Smarty version Smarty-3.1.19, created on 2017-11-02 19:36:56
          compiled from "/var/www/html/themes/default-bootstrap/errors.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:74678940859f9f5d4173ae0-50406391%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:61377214459fb65c8c5ff77-93898443%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '7dc70a1e8ce3d9b3639f012a33a3148230ad2866' => 
     array (
       0 => '/var/www/html/themes/default-bootstrap/errors.tpl',
-      1 => 1509640380,
+      1 => 1509646058,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '74678940859f9f5d4173ae0-50406391',
+  'nocache_hash' => '61377214459fb65c8c5ff77-93898443',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_59f9f5d418b2f9_77040017',
   'variables' => 
   array (
     'errors' => 0,
@@ -24,14 +22,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'request_uri' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_59fb65c8c70fc8_03200823',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_59f9f5d418b2f9_77040017')) {function content_59f9f5d418b2f9_77040017($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_59fb65c8c70fc8_03200823')) {function content_59fb65c8c70fc8_03200823($_smarty_tpl) {?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['errors']->value)&&$_smarty_tpl->tpl_vars['errors']->value) {?>
 	<div class="alert alert-danger">
-		<p><?php if (count($_smarty_tpl->tpl_vars['errors']->value)>1) {?><?php echo smartyTranslate(array('s'=>'There are %d errors','sprintf'=>count($_smarty_tpl->tpl_vars['errors']->value)),$_smarty_tpl);?>
-<?php } else { ?><?php echo smartyTranslate(array('s'=>'There is %d error','sprintf'=>count($_smarty_tpl->tpl_vars['errors']->value)),$_smarty_tpl);?>
-<?php }?></p>
 		<ol>
 		<?php  $_smarty_tpl->tpl_vars['error'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['error']->_loop = false;
  $_smarty_tpl->tpl_vars['k'] = new Smarty_Variable;
