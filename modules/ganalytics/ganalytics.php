@@ -266,6 +266,7 @@ class Ganalytics extends Module
 				ga(\'require\', \'ec\');'
 				.(($user_id && !$back_office) ? 'ga(\'set\', \'&uid\', \''.$user_id.'\');': '')
 				.($back_office ? 'ga(\'set\', \'nonInteraction\', true);' : '')
+				
 			.'</script>';
 	}
 

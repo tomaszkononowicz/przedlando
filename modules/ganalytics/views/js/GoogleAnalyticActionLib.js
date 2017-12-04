@@ -76,23 +76,23 @@ var GoogleAnalyticEnhancedECommerce = {
 	addProductDetailView: function(Product) {
 		this.add(Product);
 		ga('ec:setAction', 'detail');
-		ga('send', 'event', 'UX', 'detail', 'Product Detail View',{'nonInteraction': 1});
+		ga('send', 'event', 'UX', 'detail', 'Szczegółowy widok produktu',{'nonInteraction': 1});
 	},
 
 	addToCart: function(Product) {
 		this.add(Product);
 		ga('ec:setAction', 'add');
-		ga('send', 'event', 'UX', 'click', 'Add to Cart'); // Send data using an event.
+		ga('send', 'event', 'UX', 'click', 'Dodanie do koszyka'); // Send data using an event.
 	},
 
 	removeFromCart: function(Product) {
 		this.add(Product);
 		ga('ec:setAction', 'remove');
-		ga('send', 'event', 'UX', 'click', 'Remove From cart'); // Send data using an event.
+		ga('send', 'event', 'UX', 'click', 'Usunięcie z koszyka'); // Send data using an event.
 	},
 
 	addProductImpression: function(Product) {
-		//ga('send', 'pageview');
+		ga('send', 'pageview'); //odkomentwane
 	},
 
 	/**
@@ -129,7 +129,7 @@ var GoogleAnalyticEnhancedECommerce = {
 				list: Product.list
 			});
 
-			ga('send', 'event', 'Product Quick View', 'click', Product.list, {
+			ga('send', 'event', 'Szybki podgląd produktu', 'click', Product.list, {
 				'hitCallback': function() {
 					return !ga.loaded;
 				}
@@ -144,7 +144,7 @@ var GoogleAnalyticEnhancedECommerce = {
 			list: Product.list
 		});
 
-		ga('send', 'event', 'Product Click', 'click', Product.list, {
+		ga('send', 'event', 'Kliknięcie w link do produktu', 'click', Product.list, {
 			'nonInteraction': 1,
 			'hitCallback': function() {
 				return !ga.loaded;
@@ -155,9 +155,9 @@ var GoogleAnalyticEnhancedECommerce = {
 
 	addTransaction: function(Order) {
 
-		//this.add(Product);
+		this.add(Product); //odkomentowane
 		ga('ec:setAction', 'purchase', Order);
-		ga('send', 'event','Transaction','purchase', {
+		ga('send', 'event','transaction','purchase', { //transaction było wcześniej
 			'hitCallback': function() {
 				$.get(Order.url, {
 					orderid: Order.id,
@@ -173,6 +173,16 @@ var GoogleAnalyticEnhancedECommerce = {
 			'step': Step
 			//'option':'Visa'
 		});
-		//ga('send', 'pageview');
+	if (Step == 0)
+		ga('send', 'event', 'Transakcja', 'Podgląd koszyka');
+	else if(Step ==1)
+		ga('send', 'event', 'Transakcja', 'Adres wysyłki');
+	else if(Step ==2)
+		ga('send', 'event', 'Transakcja', 'Sposób dostawy');
+	else if(Step ==3)
+		ga('send', 'event', 'Transakcja', 'Metoda płatności');
+	else if(Step ==4)
+		ga('send', 'event', 'Transakcja', 'Potwierdzenie zamówienia');
+	ga('send', 'pageview'); //odkomentowane
 	}
 };
