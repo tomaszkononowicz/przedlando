@@ -157,12 +157,11 @@ var GoogleAnalyticEnhancedECommerce = {
 
 		//this.add(Product); //odkomentowane
 		ga('ec:setAction', 'purchase', Order);
-		ga('send', 'event','Transakcja','Potwierdzenie zamówienia', 'Całkowity koszt ' + Order.revenue, { //transaction było wcześniej
+		ga('send', 'event','Transakcja','Potwierdzenie zamówienia', 'Całkowity koszt ' + Order.revenue, {
 			'hitCallback': function() {
 				$.get(Order.url, {
 					orderid: Order.id,
 					customer: Order.customer,
-					revenue:Order.revenue
 				});
 			}
 		});
