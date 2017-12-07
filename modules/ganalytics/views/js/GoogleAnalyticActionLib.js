@@ -155,13 +155,14 @@ var GoogleAnalyticEnhancedECommerce = {
 
 	addTransaction: function(Order) {
 
-		this.add(Product); //odkomentowane
+		//this.add(Product); //odkomentowane
 		ga('ec:setAction', 'purchase', Order);
-		ga('send', 'event','transaction','purchase', { //transaction było wcześniej
+		ga('send', 'event','Transakcja','Potwierdzenie zamówienia', 'Całkowity koszt ' + Order.revenue, { //transaction było wcześniej
 			'hitCallback': function() {
 				$.get(Order.url, {
 					orderid: Order.id,
-					customer: Order.customer
+					customer: Order.customer,
+					revenue:Order.revenue
 				});
 			}
 		});
@@ -169,8 +170,9 @@ var GoogleAnalyticEnhancedECommerce = {
 	},
 
 	addCheckout: function(Step) {
+		var incrStep = Step+1;
 		ga('ec:setAction', 'checkout', {
-			'step': Step
+			'step': incrStep
 			//'option':'Visa'
 		});
 	if (Step == 0)
@@ -181,8 +183,5 @@ var GoogleAnalyticEnhancedECommerce = {
 		ga('send', 'event', 'Transakcja', 'Sposób dostawy');
 	else if(Step ==3)
 		ga('send', 'event', 'Transakcja', 'Metoda płatności');
-	else if(Step ==4)
-		ga('send', 'event', 'Transakcja', 'Potwierdzenie zamówienia');
-	ga('send', 'pageview'); //odkomentowane
 	}
 };

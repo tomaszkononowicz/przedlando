@@ -25,9 +25,21 @@
 <div class="row">
 	<div class="col-xs-12">
 		<p class="payment_module">
-			<a class="bankwire" href="{$link->getModuleLink('bankwire', 'payment')|escape:'html':'UTF-8'}" title="{l s='Pay by bank wire' mod='bankwire'}">
+			<a class="bankwire" href="{$link->getModuleLink('bankwire', 'payment')|escape:'html':'UTF-8'}" onclick="theFunction(event);return !ga.loaded;" title="{l s='Pay by bank wire' mod='bankwire'}">
 				{l s='Pay by bank wire' mod='bankwire'} <span>{l s='(order processing will be longer)' mod='bankwire'}</span>
 			</a>
 		</p>
 	</div>
 </div>
+<script type="text/javascript">
+    function theFunction (event) {
+	event.preventDefault();
+	ga('ec:setAction', 'checkout');
+	ga('send', 'event', 'Transakcja', 'Płatność', { 
+		hitCallback: function() {
+      				window.location.href= "/module/bankwire/payment";
+    			}
+		}
+	);
+    };
+</script>

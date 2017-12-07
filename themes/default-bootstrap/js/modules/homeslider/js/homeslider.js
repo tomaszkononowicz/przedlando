@@ -36,9 +36,21 @@ $(document).ready(function(){
 		homeslider_width = 779;
 
 
-	$('.homeslider-description').click(function () {
+	/*$('.homeslider-description').click(function () {
 		window.location.href = $(this).prev('a').prop('href');
+
 	});
+	
+	$('.promoClass').click(function(e)
+		e.preventDefault();
+		var href = $(this).attr('href');
+		ga('ec:addPromo', { 'id': 'PROMO_BANER', 'name': 'Baner glowny', 'position': 'center'});
+		ga('ec:setAction', 'promo_click');
+		ga('send', 'event', 'Promocje wewnętrzne', 'Baner główny', 'Kategoria ' + {$slide.legend|escape:'html':'UTF-8'}, hitCallback: function() {window.location.href = href;});
+		return true;
+		
+	)};*/
+	
 
 	if ($('#htmlcontent_top').length > 0)
 		$('#homepage-slider').addClass('col-xs-8');

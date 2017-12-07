@@ -32,7 +32,7 @@
 				{foreach from=$homeslider_slides item=slide}
 					{if $slide.active}
 						<li class="homeslider-container">
-							<a href="{$slide.url|escape:'html':'UTF-8'}" title="{$slide.legend|escape:'html':'UTF-8'}">
+							<a href="{$slide.url|escape:'html':'UTF-8'}" onclick="theFunction(event);return !ga.loaded;"  title="{$slide.legend|escape:'html':'UTF-8'}" >
 								<img src="{$link->getMediaLink("`$smarty.const._MODULE_DIR_`homeslider/images/`$slide.image|escape:'htmlall':'UTF-8'`")}"{if isset($slide.size) && $slide.size} {$slide.size}{else} width="100%" height="100%"{/if} alt="{$slide.legend|escape:'htmlall':'UTF-8'}" />
 							</a>
 							{if isset($slide.description) && trim($slide.description) != ''}
@@ -46,3 +46,17 @@
 	{/if}
 <!-- /Module HomeSlider -->
 {/if}
+
+<script type="text/javascript">
+    function theFunction (event) {
+	event.preventDefault();
+       	ga('ec:addPromo', { 'id': 'slider', 'name': 'Promocja zimowa', 'position': 'center'});
+	ga('ec:setAction', 'promo_click');
+	ga('send', 'event', 'Promocje wewnętrzne', 'Promocja zimowa', 'Baner przedni', { 
+		hitCallback: function() {
+      				window.location.href= "/46-swetry";
+    			}
+		}
+	);
+    };
+</script>
