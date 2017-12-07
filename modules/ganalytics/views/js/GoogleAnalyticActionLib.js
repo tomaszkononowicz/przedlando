@@ -76,19 +76,19 @@ var GoogleAnalyticEnhancedECommerce = {
 	addProductDetailView: function(Product) {
 		this.add(Product);
 		ga('ec:setAction', 'detail');
-		ga('send', 'event', 'UX', 'detail', 'Szczegółowy widok produktu',{'nonInteraction': 1});
+		ga('send', 'event', 'Produkty', 'Szczegóły', 'Szczegółowy widok produktu',{'nonInteraction': 1});
 	},
 
 	addToCart: function(Product) {
 		this.add(Product);
 		ga('ec:setAction', 'add');
-		ga('send', 'event', 'UX', 'click', 'Dodanie do koszyka'); // Send data using an event.
+		ga('send', 'event', 'Koszyk', 'Klik', 'Dodanie do koszyka'); // Send data using an event.
 	},
 
 	removeFromCart: function(Product) {
 		this.add(Product);
 		ga('ec:setAction', 'remove');
-		ga('send', 'event', 'UX', 'click', 'Usunięcie z koszyka'); // Send data using an event.
+		ga('send', 'event', 'Koszyk', 'Klik', 'Usunięcie z koszyka'); // Send data using an event.
 	},
 
 	addProductImpression: function(Product) {
@@ -129,7 +129,7 @@ var GoogleAnalyticEnhancedECommerce = {
 				list: Product.list
 			});
 
-			ga('send', 'event', 'Szybki podgląd produktu', 'click', Product.list, {
+			ga('send', 'event', 'Szybki podgląd produktu', 'Klik', Product.list, {
 				'hitCallback': function() {
 					return !ga.loaded;
 				}
@@ -144,7 +144,7 @@ var GoogleAnalyticEnhancedECommerce = {
 			list: Product.list
 		});
 
-		ga('send', 'event', 'Kliknięcie w link do produktu', 'click', Product.list, {
+		ga('send', 'event', 'Kliknięcie w link do produktu', 'Klik', Product.list, {
 			'nonInteraction': 1,
 			'hitCallback': function() {
 				return !ga.loaded;

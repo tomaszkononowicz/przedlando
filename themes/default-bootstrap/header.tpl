@@ -138,7 +138,7 @@
 	if(option == 's')
 		time1 = performance.now();
 	else if(option == 'e'){
-		time2 = performance.now()-time1;
+		time2 = (performance.now()-time1);
 		ga('send', 'timing', 'UserTiming', 'Czas na stronie', time2);
 	}
     };
