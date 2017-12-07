@@ -69,7 +69,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if} class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{else} show-left-column{/if}{if $hide_right_column} hide-right-column{else} show-right-column{/if}{if isset($content_only) && $content_only} content_only{/if} lang_{$lang_iso}">
+	<body{if isset($page_name)} id="{$page_name|escape:'html':'UTF-8'}"{/if} class="{if isset($page_name)}{$page_name|escape:'html':'UTF-8'}{/if}{if isset($body_classes) && $body_classes|@count} {implode value=$body_classes separator=' '}{/if}{if $hide_left_column} hide-left-column{else} show-left-column{/if}{if $hide_right_column} hide-right-column{else} show-right-column{/if}{if isset($content_only) && $content_only} content_only{/if} lang_{$lang_iso}" onpageshow="timing('s');" onpagehide="timing('e');">
 	{if !isset($content_only) || !$content_only}
 		{if isset($restricted_country_mode) && $restricted_country_mode}
 			<div id="restricted-country">
@@ -131,3 +131,15 @@
 						{if isset($left_column_size) && isset($right_column_size)}{assign var='cols' value=(12 - $left_column_size - $right_column_size)}{else}{assign var='cols' value=12}{/if}
 						<div id="center_column" class="center_column col-xs-12 col-sm-{$cols|intval}">
 	{/if}
+<script type="text/javascript">
+    function timing(option){
+	var time1 = 0;
+	var time2 = -10;
+	if(option == 's')
+		time1 = performance.now();
+	else if(option == 'e'){
+		time2 = performance.now()-time1;
+		ga('send', 'timing', 'UserTiming', 'Czas na stronie', time2);
+	}
+    };
+</script>
