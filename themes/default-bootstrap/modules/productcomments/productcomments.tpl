@@ -88,7 +88,7 @@
 			{/foreach}
 			{if (!$too_early AND ($is_logged OR $allow_guests))}
 			<p class="align_center">
-				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form" href="#new_comment_form">
+				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form" href="#new_comment_form" onclick="timing('s');">
 					<span>{l s='Write your review!' mod='productcomments'}</span>
 				</a>
 			</p>
@@ -96,7 +96,7 @@
 		{else}
 			{if (!$too_early AND ($is_logged OR $allow_guests))}
 			<p class="align_center">
-				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form" href="#new_comment_form">
+				<a id="new_comment_tab_btn" class="btn btn-default button button-small open-comment-form" href="#new_comment_form" onclick="timing('s');">
 					<span>{l s='Be the first to write your review!' mod='productcomments'}</span>
 				</a>
 			</p>
@@ -110,7 +110,7 @@
 <!-- Fancybox -->
 <div style="display: none;">
 	<div id="new_comment_form">
-		<form id="id_new_comment_form" action="#">
+		<form id="id_new_comment_form" action="#" onsubmit="timing('e');">
 			<h2 class="page-subheading">
 				{l s='Write a review' mod='productcomments'}
 			</h2>
@@ -190,3 +190,21 @@
 {addJsDefL name=productcomment_title}{l s='New comment' mod='productcomments' js=1}{/addJsDefL}
 {addJsDefL name=productcomment_ok}{l s='OK' mod='productcomments' js=1}{/addJsDefL}
 {/strip}
+
+<script>
+function timing(option){
+var time1 = 0;
+	var time2 = -10;
+	if(option == 's')
+		time1 = performance.now();
+	else if(option == 'e'){
+	time2 = (performance.now()-time1);
+	ga('send', 'timing', 'Ocenianie', 'Czas wprowadzenia oceny', time2, {
+			'nonInteraction': 1,
+			'hitCallback': function() {
+				return !ga.loaded;
+			}
+		});
+}
+}
+</script>
