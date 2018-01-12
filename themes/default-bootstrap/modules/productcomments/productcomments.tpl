@@ -134,36 +134,33 @@
 						<ul id="criterions_list">
 						{foreach from=$criterions item='criterion'}
 							<li>
-								<label>{$criterion.name|escape:'html':'UTF-8'}:</label>
+								<label>Oceń </label>
 								<div class="star_content">
 									<input class="star not_uniform" type="radio" name="criterion[{$criterion.id_product_comment_criterion|round}]" value="1" />
 									<input class="star not_uniform" type="radio" name="criterion[{$criterion.id_product_comment_criterion|round}]" value="2" />
 									<input class="star not_uniform" type="radio" name="criterion[{$criterion.id_product_comment_criterion|round}]" value="3" />
-									<input class="star not_uniform" type="radio" name="criterion[{$criterion.id_product_comment_criterion|round}]" value="4" checked="checked" />
-									<input class="star not_uniform" type="radio" name="criterion[{$criterion.id_product_comment_criterion|round}]" value="5" />
+									<input class="star not_uniform" type="radio" name="criterion[{$criterion.id_product_comment_criterion|round}]" value="4" />
+									<input class="star not_uniform" type="radio" name="criterion[{$criterion.id_product_comment_criterion|round}]" value="5" checked="checked"/>
 								</div>
 								<div class="clearfix"></div>
 							</li>
 						{/foreach}
 						</ul>
 					{/if}
-					<label for="comment_title">
-						{l s='Title:' mod='productcomments'} <sup class="required">*</sup>
-					</label>
-					<input id="comment_title" name="title" type="text" value=""/>
+					<input id="comment_title" name="title" value=" " type="hidden"/>
 					<label for="content">
-						{l s='Comment:' mod='productcomments'} <sup class="required">*</sup>
+						{l s='Comment:' mod='productcomments'}
 					</label>
-					<textarea id="content" name="content"></textarea>
+					<textarea id="content" name="content"> </textarea>
 					{if $allow_guests == true && !$is_logged}
 						<label>
-							{l s='Your name:' mod='productcomments'} <sup class="required">*</sup>
+							{l s='Your name:' mod='productcomments'}
 						</label>
-						<input id="commentCustomerName" name="customer_name" type="text" value=""/>
+						<input id="commentCustomerName" name="customer_name" type="text" value="Anonim"/>
 					{/if}
 					<div id="new_comment_form_footer">
 						<input id="id_product_comment_send" name="id_product" type="hidden" value='{$id_product_comment_form}' />
-						<p class="fl required"><sup>*</sup> {l s='Required fields' mod='productcomments'}</p>
+						
 						<p class="fr">
 							<button id="submitNewMessage" name="submitMessage" type="submit" class="btn button button-small">
 								<span>{l s='Submit' mod='productcomments'}</span>
